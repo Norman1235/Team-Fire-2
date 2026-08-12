@@ -7,6 +7,8 @@
 int main()
 {
 	std::string stringOut = "";
+	
+	int letterCount[26] = {}; // letterCount array for lowercase display
 
 	for (int currentNumber = 1; currentNumber < 101; currentNumber++)
 	{
@@ -23,6 +25,24 @@ int main()
 		{
 			stringOut += "Buzz";
 
+		}
+
+
+		for (char letter = 'a'; letter <= 'z'; ++letter)
+		{
+			for (int i = 0; i < stringOut.size(); ++i)
+			{
+				if (stringOut[i] == letter)
+				{
+					++letterCount[letter - 'a'];
+				}
+			}
+
+			if (letterCount[letter - 'a'] != 0)
+			{
+				std::cout << letter << ": "
+					<< letterCount[letter - 'a'] << '\n';
+			}
 		}
 
 		std::cout << stringOut << "\n";
