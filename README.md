@@ -10,4 +10,4 @@ Team Lead : Norman Price
 
 Tristan Day
 
-Christopher Doughty :)
+Christopher Doughty
