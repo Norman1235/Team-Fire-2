@@ -6,11 +6,11 @@ int main()
 {
 	std::string stringOut = "";
 	int currentNumber = 1; //We start printing at the number 1
-	int endingPoint = 101;
+	int endingPoint = 100;
 
+	int letterCount[26] = {}; // letterCount array for lowercase display
 
 	for (currentNumber; currentNumber <= endingPoint; currentNumber++)
-
 	{
 		stringOut = std::to_string(currentNumber) + " ";
 
@@ -36,28 +36,33 @@ int main()
 			stringOut += " 10x";
 		}
 
+
+		for (char letter = 'a'; letter <= 'z'; ++letter)
+		{
+			for (int i = 0; i < stringOut.size(); ++i)
+			{
+				if (stringOut[i] == letter)
+				{
+					++letterCount[letter - 'a'];
+				}
+			}
+
+			if (letterCount[letter - 'a'] != 0)
+			{
+				std::cout << letter << ": "
+					<< letterCount[letter - 'a'] << '\n';
+			}
+		}
+
+		if (currentNumber % 10 == 0)
+		{
+			stringOut += " 10x";
+		}
+
 		std::cout << stringOut << "\n";
 
 		stringOut = "";
 
 	}
 
-}
-
-bool IsPrime(int N)
-{
-	if (N <= 1) return false;
-
-	if (N <= 3) return false;
-
-	if (N % 2 == 0 || N % 3 == 0) return false;
-
-	for (int i = 5; i * i <= N; i += 6)
-	{
-		if (N % i == 0 || N % (i + 2) == 0)
-		{
-			return false;
-		}
-	}
-	return true;
 }
