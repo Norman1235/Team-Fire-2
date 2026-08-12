@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{71b40a40-d8f8-4387-9ff1-094c3697cf48}</ProjectGuid>
+    <ProjectGuid>{59916085-4891-2420-672F-22A790F3BFD2}</ProjectGuid>
     <RootNamespace>FireTime</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

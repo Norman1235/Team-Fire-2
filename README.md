@@ -6,8 +6,8 @@ Implement a console program that loops from 1 to 100 while applies classic FizzB
 
 ## Contributers
 
-Team Lead : Norman Price
+~~Team Lead : Norman Price~~
+~~Tristan Day~~
 
-Tristan Day
-
-Christopher Doughty :)
+Solo Dev!
+Christopher Doughty, da Best:)
