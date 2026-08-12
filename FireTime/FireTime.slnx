@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="FireTime.vcxproj" />
+  <Project Path="FireTime.vcxproj" Id="71b40a40-d8f8-4387-9ff1-094c3697cf48" />
 </Solution>

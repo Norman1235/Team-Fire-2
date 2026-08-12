@@ -8,7 +8,7 @@ int main()
 {
 	std::string stringOut = "";
 
-	for (int currentNumber = 1; currentNumber < 101; currentNumber++)
+	for (int currentNumber = 1; currentNumber <= 101; currentNumber++)
 	{
 		stringOut = std::to_string(currentNumber) + " ";
 
