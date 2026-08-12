@@ -12,26 +12,28 @@ int main()
 
 	{
 		stringOut = std::to_string(currentNumber) + " ";
+		
+			if (currentNumber % 3 == 0) //Fizz prints if currentNmber is divisable by 3
+			{
+				stringOut += "Fizz";
 
-		if (currentNumber % 3 == 0) //Fizz prints if currentNmber is divisable by 3
-		{
-			stringOut += "Fizz";
-
-		}
+			}
 
 
-		if (currentNumber % 5 == 0) //Buzz prints if currentNmber is divisable by 5
-		{
-			stringOut += "Buzz";
+			if (currentNumber % 5 == 0) //Buzz prints if currentNmber is divisable by 5
+			{
+				stringOut += "Buzz";
 
-		}
+			}
 
-		if (currentNumber % 10 == 0)
-		{
-			stringOut += " 10x";
-		}
+			if (currentNumber % 10 == 0)
+			{
+				stringOut += " 10x";
+			}
 
-		std::cout << stringOut << "\n";
+
+			std::cout << stringOut << "\n";
+		
 
 		stringOut = "";
 
