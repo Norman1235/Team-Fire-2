@@ -5,7 +5,7 @@ int main()
 {
 	std::string stringOut = "";
 	int currentNumber = 1; //We start printing at the number 1
-	int endingPoint = 101;
+	int endingPoint = 100;
 
 	int letterCount[26] = {}; // letterCount array for lowercase display
 
