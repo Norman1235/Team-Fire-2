@@ -25,6 +25,11 @@ int main()
 
 		}
 
+		if (currentNumber % 10 == 0)
+		{
+			stringOut += " 10x";
+		}
+
 		std::cout << stringOut << "\n";
 
 		stringOut = "";
