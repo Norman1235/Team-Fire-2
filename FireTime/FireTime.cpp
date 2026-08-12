@@ -1,13 +1,37 @@
 // FireTime.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include <string>
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
-}
+	std::string stringOut = "";
 
+	for (int currentNumber = 1; currentNumber < 101; currentNumber++)
+	{
+		stringOut = std::to_string(currentNumber) + " ";
+
+		if (currentNumber % 3 == 0)
+		{
+			stringOut += "Fizz";
+
+		}
+
+
+		if (currentNumber % 5 == 0)
+		{
+			stringOut += "Buzz";
+
+		}
+
+		std::cout << stringOut << "\n";
+
+		stringOut = "";
+
+	}
+
+}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
